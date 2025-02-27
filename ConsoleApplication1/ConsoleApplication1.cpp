@@ -113,7 +113,7 @@ private:
     char extention;
 
 public:
-    snakes(map_construct* map, foods* food, char ch = 'O') : currentMap(map), currentFood(food) {
+    snakes(map_construct* map, foods* food, char ch = '\x01') : currentMap(map), currentFood(food) {
         chars.push_back(ch);
         positions.push_back({ 0,0 });
     }
